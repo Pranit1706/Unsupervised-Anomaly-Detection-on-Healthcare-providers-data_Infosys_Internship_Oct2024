@@ -199,7 +199,6 @@ print(f"Precision: {precision}")
 print(f"Recall: {recall}")
 print(f"F1 Score: {f1}")
 
-import numpy as np
 def check_anomaly_reshaped(row_number, df, autoencoder, threshold, cols):
     try:
         row = df[cols].iloc[row_number].values.reshape(1, -1)  
